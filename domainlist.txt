@@ -1,4 +1,5 @@
 *2ip.ru
+*3ip.ru
 *addr.tools
 *bing.com
 *browserleaks.com
