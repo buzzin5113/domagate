@@ -892,3 +892,4 @@
 *zendesk.com
 *zerkalo.io
 *zona.media
+*sstatic.net
