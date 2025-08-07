@@ -1,0 +1,2 @@
+# domagate
+Domains management
