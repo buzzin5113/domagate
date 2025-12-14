@@ -9,4 +9,5 @@ SSH_PASSWORD = 'wwwwwwww'
 # GitHub
 GITHUB_TOKEN = 'ghp_zzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
 GITHUB_FILE = 'https://raw.githubusercontent.com/zzzzzz/xxxxxx/refs/heads/main/yyyyy/domain.txt'
-
+# Список пользователей которые могут отправлять команды
+USERS = ['aaaaaaaaaaaaa', 'bbbbbbbbbbbb']

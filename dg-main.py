@@ -130,7 +130,7 @@ def message_processing(message):
     # Проверка от кого сообщение
     username = message['message']['from']['username']
     logging.info(f'Message from {username}')
-    if username in setup.USERS:
+    if username in seсret.USERS:
         logging.info(f'User {username} allowed to send command')
         # Поиск команды
         message_text = (message['message']['text'])
