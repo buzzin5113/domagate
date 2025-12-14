@@ -20,9 +20,9 @@ def ssh_runcommand(command):
 
     # Декодируем и очистим от разцветки
     out_stdout = stdout.read().decode()
-    out_stdout = re.sub('\[[0-9;]+[a-zA-Z]','', out_stdout)
+    out_stdout = re.sub(r'[[0-9;]+[a-zA-Z]', '', out_stdout)
     out_stderr = stderr.read().decode()
-    out_stderr = re.sub('\[[0-9;]+[a-zA-Z]','', out_stderr)
+    out_stderr = re.sub(r'[[0-9;]+[a-zA-Z]', '', out_stderr)
 
     return out_stdout, out_stderr
 
@@ -130,7 +130,7 @@ def message_processing(message):
     # Проверка от кого сообщение
     username = message['message']['from']['username']
     logging.info(f'Message from {username}')
-    if username in seсret.USERS:
+    if username in secret.USERS:
         logging.info(f'User {username} allowed to send command')
         # Поиск команды
         message_text = (message['message']['text'])

@@ -39,8 +39,9 @@
 #### Настройка
 
 1. Клонировать репозиторий в /opt
-2. Скопировать файл secret.template.py в secret.py
-3. Отредактировать файл secret.py
-4. Проверить настройки в setup.py
-5. Создать образ docker командой: docker build -t domagate .
-6. Запустить образ: docker run -d --restart=always -v /opt/domagate:/app domagate:latest
+2. Создать директорию /opt/domagate/logs
+3. Скопировать файл secret.template.py в secret.py
+4. Отредактировать файл secret.py
+5. Проверить настройки в setup.py
+6. Создать образ docker командой: docker build -t domagate .
+7. Запустить образ: docker run -d --restart=always -v /opt/domagate:/app domagate:latest
