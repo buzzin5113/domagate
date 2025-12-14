@@ -20,9 +20,9 @@ def ssh_runcommand(command):
 
     # Декодируем и очистим от разцветки
     out_stdout = stdout.read().decode()
-    out_stdout = re.sub(r'[[0-9;]+[a-zA-Z]', '', out_stdout)
+    out_stdout = re.sub('\[[0-9;]+[a-zA-Z]', '', out_stdout)
     out_stderr = stderr.read().decode()
-    out_stderr = re.sub(r'[[0-9;]+[a-zA-Z]', '', out_stderr)
+    out_stderr = re.sub('\[[0-9;]+[a-zA-Z]', '', out_stderr)
 
     return out_stdout, out_stderr
 
