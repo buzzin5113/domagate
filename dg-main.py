@@ -60,8 +60,8 @@ def command_domain(message, type):
 
 
 def command_kvas(message, type):
-    # regex для домена: цифры, буквы и точка
-    pattern = r"^[a-zA-Z0-9.]+$"
+    # regex для домена: с сайта https://regex101.com/r/oX5kI7/1
+    pattern = r"(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)"
 
     logging.info(f'Start command {type}')
     logging.info(f'Message: {message}')
